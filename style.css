@@ -1,0 +1,142 @@
+header { grid-area: header; }
+main { grid-area: main; }
+footer{ grid-area: footer; }
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    grid-template-rows: 15vh 1fr 5vh;
+    height: 100vh;
+    margin: 0px;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68, 68, 68);
+    color:white;
+    font-size: 3rem;
+    font-family: "Press Start 2P", sans-serif;
+    word-spacing: -1rem;
+}
+main{
+    font-family: "Tektur", sans-serif;
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: #424242;
+}
+.selector{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnSelector{
+    display: flex;
+
+}
+
+.scoreInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #797979;
+    color: #ffffff;
+    padding: 2rem;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.alert button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #6f6f6f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.alert button:hover {
+    background-color: #424242;
+}
+
+.RPSBnts {
+    width: 200px; 
+    height: 200px; 
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.score{
+    display: flex;
+}
+.score p{
+    margin: 3rem;
+}
+
+.result-container {
+    height: 5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #result {
+    margin: 0;
+  }
+
+.fa-github{
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+footer a{
+    color: black;
+}
+footer a:visited{
+    color: black;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+footer a:hover{
+    color: purple;
+    animation: spin 0.2s linear;
+}
+#customAlert{
+    display: none;
+}
+  
